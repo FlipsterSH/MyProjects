@@ -1,0 +1,57 @@
+﻿@page "/testing"
+
+<h3>Testing</h3>
+<p>@t.Name</p>
+
+<center>
+    <div id="formdiv">
+    <EditForm Model="@t" OnSubmit="@HandleSubmit">
+        <div class="card1">
+            <label>Egenkapital:</label><br />
+             <InputNumber id="egenkapital" class="inputnumber" @bind-Value="t.Egenkapital" />
+        </div>
+
+        <div>
+            <label>Lån:</label><br />
+            <InputNumber id="laan" class="inputnumber" @bind-Value="t.Laan" />
+        </div>
+
+        <div>
+            <label>Antall år:</label><br />
+            <InputNumber id="aar" class="inputnumber" @bind-Value="t.Antall_aar" />
+        </div>
+
+        <div>
+            <label>Estimert_verdi:</label><br />
+            <InputNumber id="estimert_verdi" class="inputnumber" @bind-Value="t.Estimert_verdi" />
+        </div>
+
+        <button type="submit">Submit</button>
+    </EditForm>
+    </div>
+</center>
+
+@if(anual_percent_return_own != "")
+{
+    <h4>@anual_percent_return_own</h4>
+}
+
+@if (anual_percent_return_all != "")
+{
+    <h4>@anual_percent_return_all</h4>
+}
+
+
+@code {
+    private Testing1 t = new Testing1();
+    private string anual_percent_return_own = "";
+    private string anual_percent_return_all = "";
+
+    private void HandleSubmit()
+    {   
+        t.Name = "Peder";
+        anual_percent_return_own = t.calculate_percent_return_own();
+        anual_percent_return_all = t.calculate_percent_return_all();
+
+    }
+}
