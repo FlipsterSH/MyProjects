@@ -1,7 +1,7 @@
 ﻿@page "/testing"
 
 <h3>Testing</h3>
-<p>@t.Name</p>
+<p>@t.Description</p>
 
 <center>
     <div id="formdiv">
@@ -49,7 +49,7 @@
 
     private void HandleSubmit()
     {   
-        t.Name = "Peder";
+        t.Description = "Calculation comlete";
         anual_percent_return_own = t.calculate_percent_return_own();
         anual_percent_return_all = t.calculate_percent_return_all();
 

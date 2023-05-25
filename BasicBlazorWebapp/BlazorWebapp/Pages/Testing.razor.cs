@@ -4,7 +4,7 @@ namespace BlazorWebapp.Pages
 {
     public class Testing1
     {
-        public string Name = "Filip";
+        public string Description = "This program calculates the average percent return on an investment. Meant for investment in Real Estate, but works for other investments aswell.";
         public double Egenkapital { get; set; }
         public double Laan { get; set; }
         public int Antall_aar { get; set; }

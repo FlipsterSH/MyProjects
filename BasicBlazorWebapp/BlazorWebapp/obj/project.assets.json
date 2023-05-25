@@ -1806,11 +1806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\47981\\Desktop\\Work\\Testing_C#\\Testing_Blazor\\BlazorWebapp\\BlazorWebapp\\BlazorWebapp.csproj",
+      "projectUniqueName": "C:\\Users\\47981\\Desktop\\MyProjects\\MyProjects\\BasicBlazorWebapp\\BlazorWebapp\\BlazorWebapp.csproj",
       "projectName": "BlazorWebapp",
-      "projectPath": "C:\\Users\\47981\\Desktop\\Work\\Testing_C#\\Testing_Blazor\\BlazorWebapp\\BlazorWebapp\\BlazorWebapp.csproj",
+      "projectPath": "C:\\Users\\47981\\Desktop\\MyProjects\\MyProjects\\BasicBlazorWebapp\\BlazorWebapp\\BlazorWebapp.csproj",
       "packagesPath": "C:\\Users\\47981\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\47981\\Desktop\\Work\\Testing_C#\\Testing_Blazor\\BlazorWebapp\\BlazorWebapp\\obj\\",
+      "outputPath": "C:\\Users\\47981\\Desktop\\MyProjects\\MyProjects\\BasicBlazorWebapp\\BlazorWebapp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\47981\\AppData\\Roaming\\NuGet\\NuGet.Config",

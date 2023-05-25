@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c/CRJebC65KbsDYYGt5VMwpiTf+/j0bzTq2d6SdyhjkG4pmsFPseHC/mWknFs6JTT0f+NiI9GSkMCkzAEAgDVA==",
+  "dgSpecHash": "dRuQZ8EhMiLqeftt4F44juacga3uBHXPKP+ycOzTu48QqnraXWHEHM9xa3hV8NAaO3WORSEOHleFWYldnb8f6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\47981\\Desktop\\Work\\Testing_C#\\Testing_Blazor\\BlazorWebapp\\BlazorWebapp\\BlazorWebapp.csproj",
+  "projectFilePath": "C:\\Users\\47981\\Desktop\\MyProjects\\MyProjects\\BasicBlazorWebapp\\BlazorWebapp\\BlazorWebapp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\47981\\.nuget\\packages\\microsoft.aspnetcore.authorization\\7.0.5\\microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
     "C:\\Users\\47981\\.nuget\\packages\\microsoft.aspnetcore.components\\7.0.5\\microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
