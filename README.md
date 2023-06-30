@@ -3,4 +3,5 @@ A collection of my personal projects.
 
 -Stocktracer was made during the summer of 2022. It is a stockmarket news update webapplication, using Python Flask and Javascript VUE. AJAX for communication between frontend and backend. Yahoo finance python library for getting the stockmarket data.
 
-
+-BasicBlazorWebapp is an applitacion where I tested some basic functionality of the Blazor framework with .NET in C#
+The app contains a calculator, which calculates investment gains and returns for an investment over a period of time.
