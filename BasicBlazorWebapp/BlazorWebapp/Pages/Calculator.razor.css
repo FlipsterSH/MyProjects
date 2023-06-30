@@ -1,19 +1,19 @@
-body[b-cj13zcm7q4] {
+﻿body {
 }
 
-#formdiv[b-cj13zcm7q4]{
+#formdiv {
     width: 25%;
 }
 
-input[b-cj13zcm7q4]{
+input {
     width: 100%;
 }
 
-#top-half[b-cj13zcm7q4]{
+#top-half {
     width: 100%;
 }
 
-#middle[b-cj13zcm7q4]{
+#middle {
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,17 +22,16 @@ input[b-cj13zcm7q4]{
     padding: 0px;
 }
 
-#left[b-cj13zcm7q4]{
+#left {
     background-color: lightgray;
     text-align: center;
     height: 100%;
     width: 50%;
 }
 
-#right[b-cj13zcm7q4]{
+#right {
     background-color: darkgray;
     text-align: center;
     height: 100%;
     width: 50%;
 }
-

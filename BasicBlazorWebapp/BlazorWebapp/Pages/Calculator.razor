@@ -1,0 +1,103 @@
+﻿@page "/calculator"
+
+<center>
+    <h3>Investment calculator</h3>
+</center>
+
+<p>@calc.Description</p>
+
+<center>
+    <div id="top-half">Top half of doc</div>
+</center>
+
+<div id="middle">
+
+    <div id="left">
+
+        <center>
+            <div id="formdiv">
+                <EditForm Model="@calc" OnSubmit="@HandleSubmit">
+                    <div class="card1">
+                        <label>Egenkapital:</label><br />
+                        <InputNumber id="egenkapital" class="inputnumber" @bind-Value="calc.Egenkapital" />
+                    </div>
+
+                    <div>
+                        <label>Lån:</label><br />
+                        <InputNumber id="laan" class="inputnumber" @bind-Value="calc.Laan" />
+                    </div>
+
+                    <div>
+                        <label>Antall år:</label><br />
+                        <InputNumber id="aar" class="inputnumber" @bind-Value="calc.Antall_aar" />
+                    </div>
+
+                    <div>
+                        <label>Estimert_verdi:</label><br />
+                        <InputNumber id="estimert_verdi" class="inputnumber" @bind-Value="calc.Estimert_verdi" />
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </EditForm>
+            </div>
+        </center>
+
+        @if (anual_percent_return_own != "")
+        {
+            <h4>@anual_percent_return_own</h4>
+        }
+
+        @if (anual_percent_return_all != "")
+        {
+            <h4>@anual_percent_return_all</h4>
+        }
+
+    </div>
+
+    <div id="right">
+        <center>
+            <div id="formdiv">
+                <EditForm Model="@calc" OnSubmit="@HandleSubmit">
+                    <div class="card1">
+                        <label>Egenkapital:</label><br />
+                        <InputNumber id="egenkapital" class="inputnumber" @bind-Value="calc.Egenkapital" />
+                    </div>
+
+                    <div>
+                        <label>Lån:</label><br />
+                        <InputNumber id="laan" class="inputnumber" @bind-Value="calc.Laan" />
+                    </div>
+
+                    <div>
+                        <label>Antall år:</label><br />
+                        <InputNumber id="aar" class="inputnumber" @bind-Value="calc.Antall_aar" />
+                    </div>
+
+                    <div>
+                        <label>Estimert_verdi:</label><br />
+                        <InputNumber id="estimert_verdi" class="inputnumber" @bind-Value="calc.Estimert_verdi" />
+                    </div>
+
+                    <button type="submit">Submit</button>
+                </EditForm>
+            </div>
+        </center>
+
+    </div>
+
+</div>
+
+
+@code {
+    private Calculator1 calc = new Calculator1();
+    private string anual_percent_return_own = "";
+    private string anual_percent_return_all = "";
+
+    private void HandleSubmit()
+    {
+        calc.Description = "Calculation comlete";
+        anual_percent_return_own = calc.calculate_percent_return_own();
+        anual_percent_return_all = calc.calculate_percent_return_all();
+
+    }
+}

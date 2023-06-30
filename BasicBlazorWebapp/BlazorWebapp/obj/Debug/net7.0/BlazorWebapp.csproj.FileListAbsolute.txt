@@ -1656,3 +1656,4 @@ C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp\obj\
 C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp\obj\Debug\net7.0\refint\BlazorWebapp.dll
 C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp\obj\Debug\net7.0\BlazorWebapp.pdb
 C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp\obj\Debug\net7.0\ref\BlazorWebapp.dll
+C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp\obj\Debug\net7.0\scopedcss\Pages\Calculator.razor.rz.scp.css

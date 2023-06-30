@@ -1,57 +1,32 @@
 ﻿@page "/testing"
 
-<h3>Testing</h3>
-<p>@t.Description</p>
-
 <center>
-    <div id="formdiv">
-    <EditForm Model="@t" OnSubmit="@HandleSubmit">
-        <div class="card1">
-            <label>Egenkapital:</label><br />
-             <InputNumber id="egenkapital" class="inputnumber" @bind-Value="t.Egenkapital" />
-        </div>
-
-        <div>
-            <label>Lån:</label><br />
-            <InputNumber id="laan" class="inputnumber" @bind-Value="t.Laan" />
-        </div>
-
-        <div>
-            <label>Antall år:</label><br />
-            <InputNumber id="aar" class="inputnumber" @bind-Value="t.Antall_aar" />
-        </div>
-
-        <div>
-            <label>Estimert_verdi:</label><br />
-            <InputNumber id="estimert_verdi" class="inputnumber" @bind-Value="t.Estimert_verdi" />
-        </div>
-
-        <button type="submit">Submit</button>
-    </EditForm>
-    </div>
+<h3>Investment calculator</h3>
 </center>
 
-@if(anual_percent_return_own != "")
-{
-    <h4>@anual_percent_return_own</h4>
-}
+<p>@t.Name</p>
 
-@if (anual_percent_return_all != "")
-{
-    <h4>@anual_percent_return_all</h4>
-}
+<button class="btn btn-primary" @onclick="Posting">Call API</button>
+
+
 
 
 @code {
     private Testing1 t = new Testing1();
-    private string anual_percent_return_own = "";
-    private string anual_percent_return_all = "";
 
-    private void HandleSubmit()
-    {   
-        t.Description = "Calculation comlete";
-        anual_percent_return_own = t.calculate_percent_return_own();
-        anual_percent_return_all = t.calculate_percent_return_all();
+    private async void Posting()
+    {
+        t.Name = "KUKK";
+        string returnedContent = await t.MakeApiCall();
+        if (returnedContent != null)
+        {
+            Console.WriteLine(returnedContent);
+        }
+
+
+        
 
     }
+
+    
 }

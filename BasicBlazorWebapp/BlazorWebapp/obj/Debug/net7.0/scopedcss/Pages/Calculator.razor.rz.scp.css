@@ -1,19 +1,19 @@
-body[b-cj13zcm7q4] {
+body[b-52oiaq81zp] {
 }
 
-#formdiv[b-cj13zcm7q4]{
+#formdiv[b-52oiaq81zp] {
     width: 25%;
 }
 
-input[b-cj13zcm7q4]{
+input[b-52oiaq81zp] {
     width: 100%;
 }
 
-#top-half[b-cj13zcm7q4]{
+#top-half[b-52oiaq81zp] {
     width: 100%;
 }
 
-#middle[b-cj13zcm7q4]{
+#middle[b-52oiaq81zp] {
     width: 100%;
     height: 100%;
     display: flex;
@@ -22,17 +22,16 @@ input[b-cj13zcm7q4]{
     padding: 0px;
 }
 
-#left[b-cj13zcm7q4]{
+#left[b-52oiaq81zp] {
     background-color: lightgray;
     text-align: center;
     height: 100%;
     width: 50%;
 }
 
-#right[b-cj13zcm7q4]{
+#right[b-52oiaq81zp] {
     background-color: darkgray;
     text-align: center;
     height: 100%;
     width: 50%;
 }
-
