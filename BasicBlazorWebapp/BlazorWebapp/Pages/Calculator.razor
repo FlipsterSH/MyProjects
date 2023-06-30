@@ -57,31 +57,41 @@
     <div id="right">
         <center>
             <div id="formdiv">
-                <EditForm Model="@calc" OnSubmit="@HandleSubmit">
+                <EditForm Model="@calc2" OnSubmit="@HandleSubmit2">
                     <div class="card1">
-                        <label>Egenkapital:</label><br />
-                        <InputNumber id="egenkapital" class="inputnumber" @bind-Value="calc.Egenkapital" />
+                        <label>Owncapital:</label><br />
+                        <InputNumber id="owncapital" class="inputnumber" @bind-Value="calc2.Owncapital" />
                     </div>
 
                     <div>
-                        <label>Lån:</label><br />
-                        <InputNumber id="laan" class="inputnumber" @bind-Value="calc.Laan" />
+                        <label>Loan:</label><br />
+                        <InputNumber id="loan" class="inputnumber" @bind-Value="calc2.Loan" />
                     </div>
 
                     <div>
-                        <label>Antall år:</label><br />
-                        <InputNumber id="aar" class="inputnumber" @bind-Value="calc.Antall_aar" />
+                        <label>Number of years:</label><br />
+                        <InputNumber id="years" class="inputnumber" @bind-Value="calc2.Years" />
                     </div>
 
                     <div>
-                        <label>Estimert_verdi:</label><br />
-                        <InputNumber id="estimert_verdi" class="inputnumber" @bind-Value="calc.Estimert_verdi" />
+                        <label>Avg growth (%):</label><br />
+                        <InputNumber id="percent_growth" class="inputnumber" @bind-Value="calc2.Percent_growth" />
                     </div>
 
                     <button type="submit">Submit</button>
                 </EditForm>
             </div>
         </center>
+
+        @if (total_value != "")
+        {
+            <h4>@total_value</h4>
+        }
+
+        @if (total_gain != "")
+        {
+            <h4>@total_gain</h4>
+        }
 
     </div>
 
@@ -93,11 +103,24 @@
     private string anual_percent_return_own = "";
     private string anual_percent_return_all = "";
 
+    private Calculator2 calc2 = new Calculator2();
+    private string total_value = "";
+    private string total_gain = "";
+
+
+
     private void HandleSubmit()
     {
-        calc.Description = "Calculation comlete";
+        calc.Description = "Calculation complete";
         anual_percent_return_own = calc.calculate_percent_return_own();
         anual_percent_return_all = calc.calculate_percent_return_all();
+    }
 
+    private void HandleSubmit2()
+    {
+        calc2.Description = "Calculation complete";
+        total_value = calc2.calculate_total_value();
+        total_gain = calc2.calculate_total_gain();
+        
     }
 }

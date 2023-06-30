@@ -1,0 +1,57 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = BlazorWebapp
+build_property.RootNamespace = BlazorWebapp
+build_property.ProjectDir = C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\47981\Desktop\MyProjects\MyProjects\BasicBlazorWebapp\BlazorWebapp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Pages/Calculator.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FsY3VsYXRvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-52oiaq81zp
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Pages/Testing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVzdGluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-cj13zcm7q4
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-eftvc5ipda
+
+[C:/Users/47981/Desktop/MyProjects/MyProjects/BasicBlazorWebapp/BlazorWebapp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-fep0efrvpd
